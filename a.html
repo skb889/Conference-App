@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Application Page</title>
+    <link rel="stylesheet" href="style.css">
+        <nav>
+            <h2>Conference Travel Application</h2>
+        </nav>
+</head>
+<body>
+    
+    <div class="form-wrapper">
+        <h2>Submit your application here</h2>
+        <form action="/submit" method="POST" enctype="multipart/form-data">
+            <div class="form-control">
+                <input type="text" name="name" required>
+                <label>Name</label>
+              </div>
+              <div class="form-control">
+                <input type="text" name="reason" required>
+                <label>Reason for travel</label>
+              </div>
+              <div class="form-control">
+                <input type="text" name="department" required>
+                <label>Department</label>
+              </div>
+              <div class="form-control">
+                <input type="file" name="sop" title="Upload your SOP" required>
+              </div>
+              <button type="submit">Submit Application</button>
+              <a href="#">Need help?</a>
+        </form>
+    </div>
+</body>
+</html>

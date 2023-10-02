@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Application Approval Recommendation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="recommendation-wrapper">
+        <h2>Recommendation for Approval</h2>
+        <p>Based on the provided information, it is recommended to:</p>
+        <div class="recommendation">
+            <label for="approve">Approve:</label>
+            <input type="radio" name="recommendation" id="approve" value="approve">
+        </div>
+        <div class="recommendation">
+            <label for="reject">Reject:</label>
+            <input type="radio" name="recommendation" id="reject" value="reject">
+        </div>
+        <button id="submitRecommendation">Submit Recommendation</button>
+    </div>
+
+    <script src="recommendation.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Data</title>
+</head>
+<body>
+    <h1>Travel Application Data</h1>
+    <div id="data-container">
+        <!-- Data from the database will be displayed here -->
+    </div>
+    <script>
+        // Access the data passed from the server
+        const data = JSON.stringify(data);
+      
+        // Function to display data
+        function displayData() {
+          const dataContainer = document.getElementById('data-container');
+          data.forEach((item) => {
+            const itemDiv = document.createElement('div');
+            itemDiv.innerHTML = `<p>Name: ${item.name}</p>
+                                 <p>Reason: ${item.reason}</p>
+                                 <p>Department: ${item.department}</p>
+                                 <p>File: <a href="${item.sop}" target="_blank">${item.sop}</a></p>`;
+            dataContainer.appendChild(itemDiv);
+          });
+        }
+      
+        // Call the function to display data when the page loads
+        window.onload = displayData;
+      </script>
+</body>
+
+</html>
